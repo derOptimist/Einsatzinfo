@@ -5,6 +5,22 @@
 <title>Eingebettete Frames definieren</title>
 </head>
 <body>
+
+
+
+
 <iframe src="http://www.schwitte.de/app.einsatzinfo" frameborder=0 width="100%" height="500" name="iframe">test</iframe>
+
+
+<script>
+// pure JavaScript
+var viewportWidth  = document.documentElement.clientWidth
+  , viewportHeight = document.documentElement.clientHeight
+  
+iframe#ifrm {
+    border:0px solid #ccc;
+    width:100%; height:100%;
+    }
+</script>
 </body>
 </html>

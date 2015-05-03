@@ -1,26 +1,110 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-       "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Eingebettete Frames definieren</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Einsatzinfo</title>
+	<link rel="stylesheet" href="themes/Einsatzinfo.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+   
+   <!-- Erforderlich für Phonegap API - Online rausnehmen -->
+   <script type="text/javascript" src="cordova.js"></script>   
+   <!-- Ende für Phonegap API - Online rausnehmen -->
+   
+   
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   
+   <script type="text/javascript" src="js/myfunctions.min.js"></script>
+   
+   
+
+   
 </head>
 <body>
+	<div data-role="page" data-theme="a" id="Main" >
+		<div data-role="header" data-position="inline">
+			<h1>Einsatzinfo</h1>
+		</div>
+      
+      <div style="position:absolute;right: 15;top: 50;">
+         Build 1.0.0.0
+      </div>
+      
+		<div data-role="content" data-theme="a">
+         <form action="javascript:send_email()">
+            
+            
+            <button type="submit" name="submit" value="submit">Submit</button>
+         </form>
+		</div>
+      
+      <div data-role="footer" style="overflow:hidden;">
+         <div data-role="navbar" data-iconpos="top" data-position="fixed" data-tap-toggle="false">
+            <ul>
+               <li><a href="#Main" data-icon="home">Main</a></li>
+               <li><a href="#Options" data-icon="edit">Options</a></li>
+            </ul>
+         </div><!-- /navbar -->
+      </div><!-- /footer -->
+	</div>
+   
+   
+   
+	<div data-role="page" data-theme="a"  id="Options" >
+		<div data-role="header" data-position="inline">
+			<h1>Einsatzinfo - Optionen</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+      
+      
+      
 
-
-
-
-<iframe src="http://www.schwitte.de/heiden" frameborder=0 width="100%" height="500" name="iframe">test</iframe>
-
-
-<script>
-// pure JavaScript
-var viewportWidth  = document.documentElement.clientWidth
-  , viewportHeight = document.documentElement.clientHeight
-  
-iframe#ifrm {
-    border:0px solid #ccc;
-    width:100%; height:100%;
-    }
-</script>
+         
+         <form action="javascript:save_options()">
+            
+            <div class="ui-field-contain">
+               <label for="basic">Mail-Empf&auml;nger:</label>         
+               <input type="email" id="tb_receipient1" id="basic" value="" data-clear-btn="true">
+            </div>
+            <div class="ui-field-contain">
+               <label for="basic">Mail-Empf&auml;nger:</label>         
+               <input type="email" id="tb_receipient2" id="basic" value="" data-clear-btn="true">
+            </div>	
+            <div class="ui-field-contain">
+               <label for="basic">Mail-Empf&auml;nger:</label>         
+               <input type="email" id="tb_receipient3" id="basic" value="" data-clear-btn="true">
+            </div>	
+            <div class="ui-field-contain">
+               <label for="basic">Mail-Empf&auml;nger:</label>         
+               <input type="email" id="tb_receipient4" id="basic" value="" data-clear-btn="true">
+            </div>	
+            <div class="ui-field-contain">
+               <label for="basic">Mail-Empf&auml;nger:</label>         
+               <input type="email" id="tb_receipient5" id="basic" value="" data-clear-btn="true">
+            </div>	
+            <div class="ui-field-contain">
+               <label for="basic">Mail-Empf&auml;nger:</label>         
+               <input type="text" id="tb_message" id="basic" value="" data-clear-btn="true">
+            </div>		    	
+            
+            <button type="submit" name="submit" value="submit">Submit</button>
+         </form>
+         
+         <div data-role="popup" id="popupBasic" name="popupBasic">
+            <p>Options saved<p>
+         </div>
+		</div>
+      
+      <div data-role="footer" style="overflow:hidden;">
+         <div data-role="navbar" data-iconpos="top" data-position="fixed" data-tap-toggle="false">
+            <ul>
+               <li><a href="#Main" data-icon="home">Main</a></li>
+               <li><a href="#Options" data-icon="edit">Options</a></li>
+            </ul>
+         </div><!-- /navbar -->
+      </div><!-- /footer -->
+	</div>
+   
 </body>
 </html>

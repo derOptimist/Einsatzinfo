@@ -5,40 +5,29 @@
 	<title>Einsatzinfo</title>
 	<link rel="stylesheet" href="themes/Einsatzinfo.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-   
-   <!-- Erforderlich für Phonegap API - Online rausnehmen -->
-   <script type="text/javascript" src="cordova.js"></script>   
-   <!-- Ende für Phonegap API - Online rausnehmen -->
-   
-   
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-   
+   <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
+   <link rel="stylesheet" href="themes/test.additional.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
    <script type="text/javascript" src="js/myfunctions.min.js"></script>
-   
-   
-
-   
 </head>
 <body>
+   <!-- Main -->
 	<div data-role="page" data-theme="a" id="Main" >
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
 			<h1>Einsatzinfo</h1>
 		</div>
-      
-      <div style="position:absolute;right: 15;top: 50;">
-         Build 1.0.0.0
-      </div>
-      
 		<div data-role="content" data-theme="a">
+         <div style="position:absolute;right: 15;top: 50;">
+            Build 1.0.0.0
+         </div>
          <form action="javascript:cancel_send_mail()">
-            <button type="submit" id="bt_cancel_mail" value="submit">Benachrichtigung abbrechen</button>
+            <br>
+            <button type="submit" id="bt_cancel_mail" value="submit"><img src="images/mail.png" width="48" height="48"><font size="6">Benachrichtigung abbrechen</font><img src="images/mail.png" width="48" height="48"></button>
             <label id="lb_counter"></label>
          </form>
 		</div>
-      
-      <div data-role="footer" style="overflow:hidden;">
+      <div data-role="footer" style="overflow:hidden;"  id="footer">
          <div data-role="navbar" data-iconpos="top" data-position="fixed" data-tap-toggle="false">
             <ul>
                <li><a href="#Main" data-icon="home">Main</a></li>
@@ -47,21 +36,15 @@
          </div><!-- /navbar -->
       </div><!-- /footer -->
 	</div>
+   <!-- Ende Main -->
    
-   
-   
+   <!-- Optionen -->
 	<div data-role="page" data-theme="a"  id="Options" >
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
 			<h1>Einsatzinfo - Optionen</h1>
 		</div>
 		<div data-role="content" data-theme="a">
-      
-      
-      
-
-         
          <form action="javascript:save_options()">
-            
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
                <input type="email" id="tb_receipient1" id="basic" value="" data-clear-btn="true">
@@ -91,20 +74,18 @@
                 <input name="range_delay" id="range_delay" value="15" min="0" max="100" data-highlight="true" type="range">
                 <label for="basic">Sekunden</label> 
             </div>            
-            
             <button type="submit" name="submit" value="submit">Einstellungen speichern</button>
          </form>
-         
+         <!-- PopUp -->
          <div data-role="popup" id="popupSettingsSaved" name="popupSettingsSaved">
-            <p>Einstellungen gespeichert.<p>
+            <p>Einstellungen gespeichert. Beim nächsten Start der App wird automatisch an den/die Empf&auml;nger eine Nachricht gesendet.<p>
          </div>
          <div data-role="popup" id="popupSettingsMissing" name="popupSettingsMissing">
             <p>Geben Sie mindestens einen Empf&auml;nger und die Nachricht an.<p>
          </div>
-         
+         <!-- Ende PopUp -->
 		</div>
-      
-      <div data-role="footer" style="overflow:hidden;">
+      <div data-role="footer" style="overflow:hidden;" id="footer">
          <div data-role="navbar" data-iconpos="top" data-position="fixed" data-tap-toggle="false">
             <ul>
                <li><a href="#Main" data-icon="home">Main</a></li>
@@ -113,6 +94,6 @@
          </div><!-- /navbar -->
       </div><!-- /footer -->
 	</div>
-   
+   <!-- Ende Optionen -->
 </body>
 </html>

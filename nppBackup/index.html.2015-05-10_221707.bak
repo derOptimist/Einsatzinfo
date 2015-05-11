@@ -104,7 +104,7 @@
          
 		</div>
       
-      <div data-role="footer" style="overflow:hidden;">
+      <div data-role="footer" style="overflow:hidden;position:bottom" >
          <div data-role="navbar" data-iconpos="top" data-position="fixed" data-tap-toggle="false">
             <ul>
                <li><a href="#Main" data-icon="home">Main</a></li>
@@ -113,6 +113,5 @@
          </div><!-- /navbar -->
       </div><!-- /footer -->
 	</div>
-   
 </body>
 </html>

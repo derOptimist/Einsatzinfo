@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div data-role="page" data-theme="a" id="Main" >
-		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+		<div data-role="header" data-position="inline">
 			<h1>Einsatzinfo</h1>
 		</div>
       
@@ -32,9 +32,11 @@
       </div>
       
 		<div data-role="content" data-theme="a">
-         <form action="javascript:cancel_send_mail()">
-            <button type="submit" id="bt_cancel_mail" value="submit">Benachrichtigung abbrechen</button>
-            <label id="lb_counter"></label>
+         <form action="javascript:send_email()">
+            
+            
+            <button type="submit" name="submit" value="submit">Submit</button>
+            <label id="lb_counter">Test</label>
          </form>
 		</div>
       
@@ -51,7 +53,7 @@
    
    
 	<div data-role="page" data-theme="a"  id="Options" >
-		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+		<div data-role="header" data-position="inline">
 			<h1>Einsatzinfo - Optionen</h1>
 		</div>
 		<div data-role="content" data-theme="a">
@@ -88,20 +90,16 @@
             </div>		
             <div class="ui-field-contain">
                 <label for="slider-1">Benachrichtigung mit einer Verz&ouml;gerung von </label>
-                <input name="range_delay" id="range_delay" value="15" min="0" max="100" data-highlight="true" type="range">
+                <input name="slider-1" id="slider-1" value="15" min="0" max="100" data-highlight="true" type="range">
                 <label for="basic">Sekunden</label> 
             </div>            
             
-            <button type="submit" name="submit" value="submit">Einstellungen speichern</button>
+            <button type="submit" name="submit" value="submit">Submit</button>
          </form>
          
-         <div data-role="popup" id="popupSettingsSaved" name="popupSettingsSaved">
-            <p>Einstellungen gespeichert.<p>
+         <div data-role="popup" id="popupBasic" name="popupBasic">
+            <p>Options saved<p>
          </div>
-         <div data-role="popup" id="popupSettingsMissing" name="popupSettingsMissing">
-            <p>Geben Sie mindestens einen Empf&auml;nger und die Nachricht an.<p>
-         </div>
-         
 		</div>
       
       <div data-role="footer" style="overflow:hidden;">

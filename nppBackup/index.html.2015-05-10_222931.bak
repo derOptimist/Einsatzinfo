@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="themes/Einsatzinfo.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="themes/style.css" />
    
    <!-- Erforderlich für Phonegap API - Online rausnehmen -->
    <script type="text/javascript" src="cordova.js"></script>   

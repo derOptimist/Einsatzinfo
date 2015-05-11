@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div data-role="page" data-theme="a" id="Main" >
-		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+		<div data-role="header" data-position="inline">
 			<h1>Einsatzinfo</h1>
 		</div>
       
@@ -33,7 +33,7 @@
       
 		<div data-role="content" data-theme="a">
          <form action="javascript:cancel_send_mail()">
-            <button type="submit" id="bt_cancel_mail" value="submit">Benachrichtigung abbrechen</button>
+            <button type="submit" name="submit" value="submit">Benachrichtigung abbrechen</button>
             <label id="lb_counter"></label>
          </form>
 		</div>
@@ -51,7 +51,7 @@
    
    
 	<div data-role="page" data-theme="a"  id="Options" >
-		<div data-role="header" data-position="fixed" data-tap-toggle="false">
+		<div data-role="header" data-position="inline">
 			<h1>Einsatzinfo - Optionen</h1>
 		</div>
 		<div data-role="content" data-theme="a">
@@ -92,14 +92,14 @@
                 <label for="basic">Sekunden</label> 
             </div>            
             
-            <button type="submit" name="submit" value="submit">Einstellungen speichern</button>
+            <button type="submit" name="submit" value="submit">Submit</button>
          </form>
          
          <div data-role="popup" id="popupSettingsSaved" name="popupSettingsSaved">
             <p>Einstellungen gespeichert.<p>
          </div>
          <div data-role="popup" id="popupSettingsMissing" name="popupSettingsMissing">
-            <p>Geben Sie mindestens einen Empf&auml;nger und die Nachricht an.<p>
+            <p>"Geben Sie mindestens einen Empf&auml;nger und eine Nachricht an."<p>
          </div>
          
 		</div>

@@ -57,33 +57,32 @@
          <form action="javascript:save_options()">
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient1" id="basic" value="" data-clear-btn="true">
+               <input type="email" id="tb_receipient1" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient2" id="basic" value="" data-clear-btn="true">
+               <input type="email" id="tb_receipient2" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient3" id="basic" value="" data-clear-btn="true">
+               <input type="email" id="tb_receipient3" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient4" id="basic" value="" data-clear-btn="true">
+               <input type="email" id="tb_receipient4" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient5" id="basic" value="" data-clear-btn="true">
+               <input type="email" id="tb_receipient5" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
             <div class="ui-field-contain">
                <label for="basic">Nachricht:</label>         
-               <input type="text" id="tb_message" id="basic" value="" data-clear-btn="true">
+               <textarea id="tb_message" id="basic" value=""  placeholder="Hier können Sie die Nachricht angeben, die versendet werden soll" data-clear-btn="true" rows="10"></textarea>
             </div>		
             <div class="ui-field-contain">
-                <label for="slider-1">Benachrichtigung mit einer Verz&ouml;gerung von </label>
-                <input name="range_delay" id="range_delay" value="15" min="0" max="100" data-highlight="true" type="range">
-                <label for="basic">Sekunden</label> 
-            </div>            
+                <label for="range_delay">Verz&ouml;gerung der Benachrichtigung in Sekunden</label> 
+                <input name="range_delay" id="range_delay" min="15" max="100" value="15" type="number" width="10">
+            </div>  		
             <button type="submit" name="submit" value="submit">Einstellungen speichern</button>
          </form>
          <!-- PopUp -->

@@ -10,8 +10,14 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
    <script type="text/javascript" src="js/myfunctions.min.js"></script>
+   <script type="text/javascript" charset="utf-8">
+   function onLoad() {
+   //document.addEventListener('deviceready', onDeviceReady, false);
+   document.addEventListener('resume', onDeviceResume, false);
+   }
+   </script>
 </head>
-<body>
+<body onload="onLoad()">
    <!-- Main -->
 	<div data-role="page" data-theme="a" id="Main" >
 		<div data-role="header" data-position="fixed" data-tap-toggle="false">
@@ -25,7 +31,10 @@
             <br>
             <button type="submit" id="bt_cancel_mail" value="submit">Initialisierung</button>
             <center><label id="lb_counter"></label></center>
-         </form>
+         </form> 
+         <div id="description">
+           <!-- Wird in Funktion 'set_description' gesetzt -->
+         </div>
 		</div>
       <div data-role="footer" data-position="fixed" data-tap-toggle="false" style="overflow:hidden;"  id="footer">
          <div data-role="navbar" data-iconpos="top" >

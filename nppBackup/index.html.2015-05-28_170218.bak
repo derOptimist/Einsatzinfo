@@ -90,7 +90,7 @@
             <p>Einstellungen gespeichert. Beim nächsten Start der App wird automatisch an den/die Empf&auml;nger eine Nachricht gesendet.<p>
          </div>
          <div data-role="popup" id="popupSettingsMissing" name="popupSettingsMissing">
-            <p>Geben Sie mindestens einen Empf&auml;nger, die Nachricht und die Verz&ouml;gerung an.<p>
+            <p>Geben Sie mindestens einen Empf&auml;nger und die Nachricht an.<p>
          </div>
          <!-- Ende PopUp -->
 		</div>

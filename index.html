@@ -13,6 +13,7 @@
    <script type="text/javascript" src="js/myfunctions.min.js"></script>
    <script type="text/javascript" charset="utf-8">
    function onLoad() {
+   alert("mitten bei der aktivierung");
    document.addEventListener('deviceready', onDeviceReady, false);
    document.addEventListener('resume', onDeviceResume, false);
    }
@@ -56,6 +57,10 @@
 		</div>
 		<div data-role="content" data-theme="a">
          <form action="javascript:save_options()">
+            <div class="ui-field-contain">
+               <label for="basic">Eigene Mail:</label>         
+               <input type="email" id="tb_mail" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+            </div>
             <div class="ui-field-contain">
                <label for="basic">Mail-Empf&auml;nger:</label>         
                <input type="email" id="tb_receipient1" id="basic" value="" data-clear-btn="true" placeholder="mail@adresse.de">
@@ -115,11 +120,14 @@
 		<div data-role="content" data-theme="a">
          Fehler oder Probleme bei der Bedienung?<br>
          Hier bekommen Sie weitere Informationen oder Sie können Fehler berichten:
-         <a href="https://www.facebook.com/einsatzinfo">facebook.com/einsatzinfo</a>
+         <a href="https://www.facebook.com/einsatzinfo">facebook.com/einsatzinfo</a><br><br>
          
-         <div id="dyn_info">
-           <!-- Wird in Funktion 'set_info' gesetzt -->
+         <div id="dyn_info_id">
+           <!-- Wird in Funktion 'dyn_info_id' gesetzt -->
            ID=Error
+         </div>
+         <div id="dyn_info_status">
+           <!-- Wird in Funktion 'dyn_info_status' gesetzt -->
          </div>
          
 		</div>

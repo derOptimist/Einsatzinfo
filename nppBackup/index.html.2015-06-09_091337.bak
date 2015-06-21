@@ -89,14 +89,10 @@
          </form>
          <!-- PopUp -->
          <div data-role="popup" id="popupSettingsSaved" name="popupSettingsSaved">
-            <p>Einstellungen gespeichert. Beim n&auml;chsten Start der App wird automatisch an den/die Empf&auml;nger eine Nachricht gesendet.<p>
+            <p>Einstellungen gespeichert. Beim nächsten Start der App wird automatisch an den/die Empf&auml;nger eine Nachricht gesendet.<p>
          </div>
          <div data-role="popup" id="popupSettingsMissing" name="popupSettingsMissing">
-            <p>Geben Sie mindestens einen Empf&auml;nger, die Nachricht, eine Verz&ouml;gerung an und Ihre Mailadresse an.<p>
-         </div>
-         <div data-role="popup" id="popupActivation" name="popupActivation">
-            <!-- Gleichen Text im Try Catch in myfunctions hinterlegen -->
-            <p>Bitte aktivieren Sie Ihre Mailadresse.<p> 
+            <p>Geben Sie mindestens einen Empf&auml;nger, die Nachricht und die Verz&ouml;gerung an.<p>
          </div>
          <!-- Ende PopUp -->
 		</div>
@@ -122,7 +118,7 @@
             <div id="version"><b>
                 Version 1.0.0
             </b></div>
-            <br>
+            <p\>
             <div>
                 Fehler oder Probleme bei der Bedienung?<br>
                 Hier bekommen Sie weitere Informationen oder Sie können Fehler berichten:

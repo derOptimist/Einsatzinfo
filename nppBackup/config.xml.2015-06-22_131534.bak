@@ -7,7 +7,6 @@
 
 <gap:plugin name="org.apache.cordova.device" />
 <gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" version="1.2.0" />
-<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
 
     <name>Einsatzinfo</name>
 

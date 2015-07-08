@@ -3,10 +3,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Einsatzinfo</title>
+   <link rel="stylesheet" href="css/screen.css" />
 	<link rel="stylesheet" href="themes/Einsatzinfo.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
    <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
    <link rel="stylesheet" href="themes/Einsatzinfo.additional.css" />
+
    <script type="text/javascript" src="cordova.js"></script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -24,7 +26,10 @@
     
         // Specify the validation rules
         rules: {
-
+            tb_mail: "required",
+            tb_receipient1: "required",
+            tb_message: "required",
+            range_delay: "required"
         },
         
         // Specify the validation error messages
@@ -34,7 +39,9 @@
             tb_receipient2: "Bitte eine gültige Mailadresse angeben",
             tb_receipient3: "Bitte eine gültige Mailadresse angeben",
             tb_receipient4: "Bitte eine gültige Mailadresse angeben",
-            tb_receipient5: "Bitte eine gültige Mailadresse angeben"
+            tb_receipient5: "Bitte eine gültige Mailadresse angeben",
+            tb_message: "Dies ist ein Pflichtfeld",
+            range_delay: "Dies ist ein Pflichtfeld"
         },
         
         submitHandler: function(form) {
@@ -113,7 +120,7 @@
             </div>	
            <div data-role="fieldcontain">
                <label for="tb_message">Nachricht:</label>         
-               <textarea id="tb_message" name="tb_message" value=""  placeholder="Hier können Sie die Nachricht angeben, die versendet werden soll" data-clear-btn="true" rows="10"></textarea>
+               <textarea id="tb_message" name="tb_message" value=""  placeholder="Hier können Sie die Nachricht angeben die versendet werden soll" data-clear-btn="true" rows="10" ></textarea>
             </div>		
            <div data-role="fieldcontain">
                 <label for="range_delay">Verz&ouml;gerung der Benachrichtigung in Sekunden</label> 

@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Einsatzinfo</title>
-   <link rel="stylesheet" href="css/screen.css" />
+   <link rel="stylesheet" href="themes/validation/screen.css" />
 	<link rel="stylesheet" href="themes/Einsatzinfo.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
    <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
@@ -16,47 +16,10 @@
    <script type="text/javascript" src="js/myfunctions.min.js"></script>
    <!-- <script type="text/javascript" src="http://www.schwitte.de/einsatzinfo/js/myfunctions.min.js"></script> -->
    <script type="text/javascript" charset="utf-8">
-   
-   
-  // When the browser is ready...
-  $(function() {
-  
-    // Setup form validation on the #register-form element
-    $("#register-form").validate({
-    
-        // Specify the validation rules
-        rules: {
-            tb_mail: "required",
-            tb_receipient1: "required",
-            tb_message: "required",
-            range_delay: "required"
-        },
-        
-        // Specify the validation error messages
-        messages: {
-            tb_mail: "Bitte eine gültige Mailadresse angeben",
-            tb_receipient1: "Bitte eine gültige Mailadresse angeben",
-            tb_receipient2: "Bitte eine gültige Mailadresse angeben",
-            tb_receipient3: "Bitte eine gültige Mailadresse angeben",
-            tb_receipient4: "Bitte eine gültige Mailadresse angeben",
-            tb_receipient5: "Bitte eine gültige Mailadresse angeben",
-            tb_message: "Dies ist ein Pflichtfeld",
-            range_delay: "Dies ist ein Pflichtfeld"
-        },
-        
-        submitHandler: function(form) {
-            form.submit();
-        }
-    });
-
-  });
-   
-   function onLoad() {
-   document.addEventListener('deviceready', onDeviceReady, false);
-   document.addEventListener('resume', onDeviceResume, false);
-
-   
-   }
+      function onLoad() {
+      document.addEventListener('deviceready', onDeviceReady, false);
+      document.addEventListener('resume', onDeviceResume, false);
+      }
    </script>
 </head>
 <body onload="onLoad()">

@@ -14,28 +14,40 @@
    <script type="text/javascript" src="js/myfunctions.min.js"></script>
    <!-- <script type="text/javascript" src="http://www.schwitte.de/einsatzinfo/js/myfunctions.min.js"></script> -->
    <script type="text/javascript" charset="utf-8">
+   
+   
+  // When the browser is ready...
+  $(function() {
+  
+    // Setup form validation on the #register-form element
+    $("#register-form").validate({
+    
+        // Specify the validation rules
+        rules: {
+
+        },
+        
+        // Specify the validation error messages
+        messages: {
+            tb_mail: "Bitte eine gültige Mailadresse angeben",
+            tb_receipient1: "Bitte eine gültige Mailadresse angeben",
+            tb_receipient2: "Bitte eine gültige Mailadresse angeben",
+            tb_receipient3: "Bitte eine gültige Mailadresse angeben",
+            tb_receipient4: "Bitte eine gültige Mailadresse angeben",
+            tb_receipient5: "Bitte eine gültige Mailadresse angeben"
+        },
+        
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+  });
+   
    function onLoad() {
    document.addEventListener('deviceready', onDeviceReady, false);
    document.addEventListener('resume', onDeviceResume, false);
-   
-$( "#Options" ).on( "pageinit", function() {
-	$( "form" ).validate({
-		rules: {
-			tb_mail: {
-				required: true
-			},
-			tb_receipient1: {
-				required: true
-			},
-			tb_message: {
-				required: true
-			}
-		},
-		errorPlacement: function( error, element ) {
-			error.insertAfter( element.parent() );
-		}
-	});
-});
+
    
    }
    </script>
@@ -74,38 +86,38 @@ $( "#Options" ).on( "pageinit", function() {
 			<h1>Einsatzinfo - Optionen</h1>
 		</div>
 		<div data-role="content" data-theme="a">
-         <form action="javascript:save_options()">
+         <form action="javascript:save_options()" id="register-form" novalidate="novalidate">
             <div data-role="fieldcontain">
                <label for="tb_mail">Eigene Mail:</label>         
-               <input type="email" id="tb_mail" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+               <input type="email" id="tb_mail" name="tb_mail" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>
            <div data-role="fieldcontain">
                <label for="tb_receipient1">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient1" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+               <input type="email" id="tb_receipient1" name="tb_receipient1" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>
            <div data-role="fieldcontain">
                <label for="tb_receipient2">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient2" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+               <input type="email" id="tb_receipient2" name="tb_receipient2" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
            <div data-role="fieldcontain">
                <label for="tb_receipient3">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient3" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+               <input type="email" id="tb_receipient3" name="tb_receipient3" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
            <div data-role="fieldcontain">
                <label for="tb_receipient4">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient4" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+               <input type="email" id="tb_receipient4" name="tb_receipient4" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
            <div data-role="fieldcontain">
                <label for="tb_receipient5">Mail-Empf&auml;nger:</label>         
-               <input type="email" id="tb_receipient5" value="" data-clear-btn="true" placeholder="mail@adresse.de">
+               <input type="email" id="tb_receipient5" name="tb_receipient5" value="" data-clear-btn="true" placeholder="mail@adresse.de">
             </div>	
            <div data-role="fieldcontain">
                <label for="tb_message">Nachricht:</label>         
-               <textarea id="tb_message" value=""  placeholder="Hier können Sie die Nachricht angeben, die versendet werden soll" data-clear-btn="true" rows="10"></textarea>
+               <textarea id="tb_message" name="tb_message" value=""  placeholder="Hier können Sie die Nachricht angeben, die versendet werden soll" data-clear-btn="true" rows="10"></textarea>
             </div>		
            <div data-role="fieldcontain">
                 <label for="range_delay">Verz&ouml;gerung der Benachrichtigung in Sekunden</label> 
-                <input name="range_delay" id="range_delay" min="15" max="100" value="15" type="number" width="10" data-clear-btn="true">
+                <input id="range_delay" name="range_delay" min="15" max="100" value="15" type="number" width="10" data-clear-btn="true">
             </div> 		
             <button type="submit" name="submit" value="submit">Einstellungen speichern</button>
          </form>

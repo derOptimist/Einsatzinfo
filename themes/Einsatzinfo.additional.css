@@ -18,7 +18,8 @@ background: white !important;
 color: white !important; 
 background: white !important; 
 }
-/* #bt_cancel_mail { 
-color: black !important; 
-background: black !important; 
-} */
+#bt_cancel_mail { 
+/* color: black !important; 
+background: black !important;  */
+width:98% !important;
+}

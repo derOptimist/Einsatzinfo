@@ -2,13 +2,15 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.einsatzinfo"
-    versionCode = "2" 
-    version     = "1.0.1" >
+    versionCode = "3" 
+    version     = "1.1.0" >
 
 <gap:plugin name="org.apache.cordova.device" />
-<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" version="1.2.0" />
-<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+<gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" />
+<gap:plugin name="org.apache.cordova.network-information" />
 <gap:plugin name="org.apache.cordova.dialogs" />
+<!-- whitelistplugin - Um auf schwitte.de zuzugreifen -->
+<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
 
     <name>Einsatzinfo</name>
 
@@ -26,4 +28,6 @@
     <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
 </feature> -->
 
+<access origin="http://schwitte.de" subdomains="true" />
+<allow-navigation href="http://schwitte.de/*" />
 </widget>

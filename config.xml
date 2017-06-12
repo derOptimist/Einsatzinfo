@@ -9,6 +9,8 @@
 
 <gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
 <gap:plugin name="cordova-plugin-network-information" source="npm" />
+<gap:plugin name="cordova-plugin-dialogs" source="npm" />
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 
 
 

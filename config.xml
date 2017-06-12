@@ -26,6 +26,6 @@
     <icon src="icon.png" />
     <feature name="http://api.phonegap.com/1.0/network"/>
 
-<access origin="https://schwitte.de" subdomains="true" />
-<allow-navigation href="https://schwitte.de/*" />
+<access origin="https://www.schwitte.de" subdomains="true" />
+<allow-navigation href="https://www.schwitte.de/*" />
 </widget>

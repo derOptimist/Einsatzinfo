@@ -9,7 +9,7 @@
 <gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" />
 <gap:plugin name="org.apache.cordova.network-information" />
 <gap:plugin name="org.apache.cordova.dialogs" />
-<!-- whitelistplugin - Um auf schwitte.de zuzugreifen -->
+<!-- whitelistplugin - Um auf schwitte.de zuzugreifen
 <plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" /> -->
 
 

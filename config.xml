@@ -2,8 +2,8 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.einsatzinfo"
-    versionCode = "3" 
-    version     = "1.1.0" >
+    versionCode = "4" 
+    version     = "1.2.0" >
 
 <gap:plugin name="org.apache.cordova.device" />
 <gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" />
@@ -28,6 +28,6 @@
     <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
 </feature> -->
 
-<access origin="http://schwitte.de" subdomains="true" />
-<allow-navigation href="http://schwitte.de/*" />
+<access origin="https://schwitte.de" subdomains="true" />
+<allow-navigation href="https://schwitte.de/*" />
 </widget>

@@ -5,12 +5,17 @@
     versionCode = "4" 
     version     = "1.3.0" >
 
-<!-- <gap:plugin name="org.apache.cordova.device" /> -->
+<!-- <gap:plugin name="org.apache.cordova.device" />
 <gap:plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" />
 <gap:plugin name="org.apache.cordova.network-information" />
 <gap:plugin name="org.apache.cordova.dialogs" />
 <!-- whitelistplugin - Um auf schwitte.de zuzugreifen -->
-<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" /> -->
+
+
+<gap:plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+
+
 
     <name>Einsatzinfo</name>
 
